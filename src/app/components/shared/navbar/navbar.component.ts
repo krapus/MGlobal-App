@@ -11,8 +11,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  getEmployees(idEmployee: number) {
-    console.log(idEmployee);
+  getEmployees(idEmployee: number) {    
     if (!idEmployee) {
       this.router.navigate(['/search']);
     }
