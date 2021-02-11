@@ -1,0 +1,22 @@
+<div class="animated fadeIn rounded overflow-hidden">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="p-2">Id</th>
+                <th scope="col" class="p-2">Name</th>
+                <th scope="col" class="p-2">Rol</th>
+                <th scope="col" class="p-2">Contract Type</th>
+                <th scope="col" class="p-2">Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.roleName}}</td>
+                <td>{{employee.contractType}}</td>
+                <td>{{employee.annualSalary | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

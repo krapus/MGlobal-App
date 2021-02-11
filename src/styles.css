@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+th {
+    background-color: #6c7ae0;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Lato-Bold;
+}
+
+tr {
+    font-family: Lato-Regular;
+    color: #808080;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+
+nav {
+    background-color: #f8f6ff !important;
+    font-family: Lato-Regular;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c7ae0;
+}
+
+
+/* Animations */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url('assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url('assets/fonts/Lato/Lato-Bold.ttf');
+}
